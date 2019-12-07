@@ -1,17 +1,14 @@
 .bkg {
-  margin: 0px;
   position: absolute;
   top: 50%;
-  margin-top: -153px;
   left: 50%;
-  margin-left: -160px;
+  margin: -153px 0 0 -160px;
   background-color: white;
 }
 
 .nav, .list {
   background-color: #f65040;
   border-radius: 7px;
-  border: 0px solid #fff;
 }
 
 .nav {
@@ -40,40 +37,36 @@
   display: inline-block;
   margin-top: 31px;
   margin-right: 28px;
-  width:0px;
-  height:0px;
+  width:0;
+  height:0;
   border-top: 14px solid white;
   border-right: 10px solid transparent;
   border-bottom: 10px solid transparent;
   border-left: 10px solid transparent;
 }
 
-.blank, .list {
+.list {
   display: none;
 }
-
-.bkg:hover .blank {
-  display: block;
-} 
 
 .bkg:hover .list {
   display: block;
 } 
 
-.blank {
+.list {
+  width: 320px;
+  margin-top: 24px;
+}
+
+.list::before {
+  content: "";
   position: absolute;
+  top: 70.5px;
   right: 28px;
-  width:0px;
-  height:0px;
   border-top: 10px solid transparent;
   border-right: 10px solid transparent;
   border-bottom: 14px solid #f65040;
   border-left: 10px solid transparent;
-}
-
-.list {
-  width: 320px;
-  margin-top: 24px;
 }
 
 .list a {
@@ -109,21 +102,21 @@
   margin-left: 15px;
 }
 
-.heart {
+.icon-image {
   float: left;
-  background: url(../static/bkg.png) no-repeat 14px -32px;
+  background: url(../static/bkg.png) no-repeat;
   background-size: 190%;
+}
+
+.heart {
+  background-position: 14px -32px; 
 }
 
 .star {
-  float: left;
-  background: url(../static/bkg.png) no-repeat -50px 20px;
-  background-size: 190%;
+  background-position: -50px 20px;
 }
 
 .chat {
-  float: left;
-  background: url(../static/bkg.png) no-repeat 15px 20px;
-  background-size: 190%;
+  background-position: 15px 20px;
 }
 
